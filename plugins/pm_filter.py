@@ -403,8 +403,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🧲', url='https://t.me/mlavib'), 
             InlineKeyboardButton('🏪', callback_data='help'), 
             InlineKeyboardButton('💊', callback_data='about')
-            ],[
-            InlineKeyboardButton('🎪 join channel 🎪', url='https://t.me/Malayalamvibe') 
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
