@@ -80,7 +80,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('🔍', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🧲', url="https://t.me/mlavib"), 
+            InlineKeyboardButton('🧲', url='https://t.me/mlavib'), 
             InlineKeyboardButton('🏪', callback_data='help'), 
             InlineKeyboardButton('💊', callback_data='about')
             ],[
