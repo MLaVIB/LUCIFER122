@@ -39,11 +39,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🧲', url="https://t.me/mlavib"), 
+            InlineKeyboardButton('🧲', url='https://t.me/mlavib'), 
             InlineKeyboardButton('🏪', callback_data='help'), 
             InlineKeyboardButton('💊', callback_data='about')
             ],[
-            InlinekeyboardButton('🎪join Channel🎪', url="https://t.me/malayalamvibe") 
+            InlinekeyboardButton('🎪join Channel🎪', url='https://t.me/malayalamvibe') 
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -84,7 +84,7 @@ async def start(client, message):
             InlineKeyboardButton('🏪', callback_data='help'), 
             InlineKeyboardButton('💊', callback_data='about')
             ],[
-            InlinekeyboardButton('🎪join Channel🎪', url="https://t.me/malayalamvibe")
+            InlinekeyboardButton('🎪join Channel🎪', url='https://t.me/malayalamvibe')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
