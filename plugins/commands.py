@@ -42,8 +42,6 @@ async def start(client, message):
             InlineKeyboardButton('🧲', url='https://t.me/mlavib'), 
             InlineKeyboardButton('🏪', callback_data='help'), 
             InlineKeyboardButton('💊', callback_data='about')
-            ],[
-            InlinekeyboardButton('🎪join Channel🎪', url='https://t.me/malayalamvibe') 
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -83,8 +81,6 @@ async def start(client, message):
             InlineKeyboardButton('🧲', url='https://t.me/mlavib'), 
             InlineKeyboardButton('🏪', callback_data='help'), 
             InlineKeyboardButton('💊', callback_data='about')
-            ],[
-            InlinekeyboardButton('🎪join Channel🎪', url='https://t.me/malayalamvibe')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
