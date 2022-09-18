@@ -398,13 +398,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🤖 Support', url='https://t.me/mlavib')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help')
-            ],[
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('🧲', url='https://t.me/mlavib'), 
+            InlineKeyboardButton('🏪', callback_data='help'), 
+            InlineKeyboardButton('💊', callback_data='about')
             ],[
             InlineKeyboardButton('🎪 join channel 🎪', url='https://t.me/Malayalamvibe') 
         ]]
