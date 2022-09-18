@@ -37,13 +37,11 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🤖 Support', url='https://t.me/mlavib')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help')
-            ],[
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('🧲', url="https://t.me/mlavib"), 
+            InlineKeyboardButton('🏪', callback_data='help'), 
+            InlineKeyboardButton('💊', callback_data='about')
             ],[
             InlinekeyboardButton('🎪join Channel🎪', url="https://t.me/malayalamvibe") 
         ]]
@@ -80,13 +78,11 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🤖 Support', url='https://t.me/mlavib')
-            ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help')
-            ],[
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('🧲', url="https://t.me/mlavib"), 
+            InlineKeyboardButton('🏪', callback_data='help'), 
+            InlineKeyboardButton('💊', callback_data='about')
             ],[
             InlinekeyboardButton('🎪join Channel🎪', url="https://t.me/malayalamvibe")
         ]]
