@@ -641,7 +641,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>ഹായി {} ⚠️കോപ്പിറൈറ്റ് ഉള്ളത് കൊണ്ട് നിങ്ങൾ ചോദിച്ച {search} മൂവി 5 മിനിറ്റ് കൊണ്ട് ഇവിടെ നിന്ന് ഡിലീറ്റ് ആകും!!!<\b>"
+        cap = f"⚠️കോപ്പിറൈറ്റ് ഉള്ളത് കൊണ്ട് നിങ്ങൾ ചോദിച്ച {search} മൂവി 5 മിനിറ്റ് കൊണ്ട് ഇവിടെ നിന്ന് ഡിലീറ്റ് ആകും!!!"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
