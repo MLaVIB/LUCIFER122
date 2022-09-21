@@ -60,14 +60,6 @@ async def next_page(bot, query):
     if SINGLE_BUTTON:
         btn = [
             [
-                InlineKeybordButton(
-                    'join channel', url='https://t.me/Malayalamvibe' 
-                ), 
-             
-            
-        ], 
-              [
-            
                 InlineKeyboardButton(
                     text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
