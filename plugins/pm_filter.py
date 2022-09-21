@@ -642,6 +642,9 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         cap = f"⚠️കോപ്പിറൈറ്റ് ഉള്ളത് കൊണ്ട് നിങ്ങൾ ചോദിച്ച {search} മൂവി 5 മിനിറ്റ് കൊണ്ട് ഇവിടെ നിന്ന് ഡിലീറ്റ് ആകും!!!"
+        btn.append(
+            [InlineKeyboardButton(text="🧸 1/1",callback_data="pages")]
+        ) 
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
