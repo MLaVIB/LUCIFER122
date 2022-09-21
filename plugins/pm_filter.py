@@ -647,7 +647,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         cap = f"⚠️കോപ്പിറൈറ്റ് ഉള്ളത് കൊണ്ട് നിങ്ങൾ ചോദിച്ച {search} മൂവി 5 മിനിറ്റ് കൊണ്ട് ഇവിടെ നിന്ന് ഡിലീറ്റ് ആകും!!!"
         btn.append(
-            [InlineKeyboardButton('🧹close', callback_data='close_data')]
+            [InlineKeyboardButton('🔰𝙅𝙤𝙞𝙣 𝙘𝙝𝙖𝙣𝙣𝙚𝙡🔰', url='https://t.me/Malayalamvibe')],[InlineKeyboardButton(text="🧹Close", callback_data=f'spolling#{user}#close_spellcheck')]) 
         ) 
     if imdb and imdb.get('poster'):
         try:
