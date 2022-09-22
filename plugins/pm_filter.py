@@ -647,6 +647,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         await message.reply_photo('https://telegra.ph/file/592b83106a602598aedaf.jpg')
         await msg.message.delete()
+        return
         cap = f"⚠️കോപ്പിറൈറ്റ് ഉള്ളത് കൊണ്ട് നിങ്ങൾ ചോദിച്ച {search} മൂവി 5 മിനിറ്റ് കൊണ്ട് ഇവിടെ നിന്ന് ഡിലീറ്റ് ആകും!!!"
         btn.append(
             [InlineKeyboardButton('🔰𝙅𝙤𝙞𝙣 𝙘𝙝𝙖𝙣𝙣𝙚𝙡🔰', url='t.me/Malayalamvibe')]
