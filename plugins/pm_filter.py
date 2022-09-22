@@ -127,7 +127,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase')
+            k = await message.reply_photo('https://telegra.ph/file/c3b46f8bf8195d483aa99.jpg')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -648,7 +648,7 @@ async def auto_filter(client, msg, spoll=False):
         k = await message.reply_text('https://telegra.ph/file/e0eca4a3660ebc4ef1993.mp4')
         await asyncio.sleep(3)
         await k.delete()
-        k = await message.reply_text('<b>ദാ.... പിടിച്ചോ....!<\b>')
+        k = await message.reply_text('**ദാ.... പിടിച്ചോ....!**')
         await asyncio.sleep(1)
         await k.delete()
         cap = f"⚠️കോപ്പിറൈറ്റ് ഉള്ളത് കൊണ്ട് നിങ്ങൾ ചോദിച്ച {search} മൂവി 5 മിനിറ്റ് കൊണ്ട് ഇവിടെ നിന്ന് ഡിലീറ്റ് ആകും!!!"
