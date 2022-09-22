@@ -127,7 +127,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit_photo('https://telegra.ph/file/c3b46f8bf8195d483aa99.jpg')
+            k = await query.message.edit_text('https://telegra.ph/file/c3b46f8bf8195d483aa99.jpg')
             await asyncio.sleep(10)
             await k.delete()
 
