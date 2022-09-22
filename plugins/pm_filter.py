@@ -645,7 +645,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        k = await message.reply_text('https://telegra.ph/file/29922a6da5ab850f42b7c.jpg')
+        k = await message.reply_text('https://telegra.ph/file/e0eca4a3660ebc4ef1993.mp4')
         await asyncio.sleep(3)
         await k.delete()
         cap = f"⚠️കോപ്പിറൈറ്റ് ഉള്ളത് കൊണ്ട് നിങ്ങൾ ചോദിച്ച {search} മൂവി 5 മിനിറ്റ് കൊണ്ട് ഇവിടെ നിന്ന് ഡിലീറ്റ് ആകും!!!"
