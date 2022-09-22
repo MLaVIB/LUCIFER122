@@ -646,6 +646,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         k = await message.reply_photo('https://telegra.ph/file/592b83106a602598aedaf.jpg')
+        await query.answer("wait for 5 seconds",show_alert=True)
         await asyncio.sleep(5)
         await k.delete()
         cap = f"⚠️കോപ്പിറൈറ്റ് ഉള്ളത് കൊണ്ട് നിങ്ങൾ ചോദിച്ച {search} മൂവി 5 മിനിറ്റ് കൊണ്ട് ഇവിടെ നിന്ന് ഡിലീറ്റ് ആകും!!!"
