@@ -645,7 +645,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        k = await message.reply_text('https://telegra.ph/file/e0eca4a3660ebc4ef1993.mp4')
+        k = await message.reply_text('**🧲please wait Fletching files.....🔎**\n\n\nis.gd/T7nn4e')
         await asyncio.sleep(3)
         await k.delete()
         k = await message.reply_text('**ദാ.... പിടിച്ചോ....!**')
