@@ -3,7 +3,7 @@
   <img src="assets/logo(1).jpg" alt="Akbotmakersnew Logo">
 </p>
 <h1 align="center">
-  <b>LUCIFER BOT</b>
+  <b>SASI BOT</b>
 </h1>
 
 ## Features
@@ -38,7 +38,7 @@
 ## Deploy
 You can deploy this on HEROKU.COM
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Asifasif6625/LUCIFER122)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Asifasif6625/122)
 
 ## Commands
 ```
