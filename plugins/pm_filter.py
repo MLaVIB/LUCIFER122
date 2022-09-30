@@ -127,13 +127,11 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            await query.edit_message_reply_markup(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-        except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
+            k = await query.message.edit(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-             await query.edit_message_reply_markup(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            
-
+            await asyncio.sleep(10)
+            await k.delete()
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
