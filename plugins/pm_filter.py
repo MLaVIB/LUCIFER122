@@ -132,7 +132,7 @@ async def advantage_spoll_choker(bot, query):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             await query.message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            return 
+            
 
 
 @Client.on_callback_query()
